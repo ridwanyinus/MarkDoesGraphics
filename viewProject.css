@@ -1,8 +1,11 @@
-#about_main {
-  background: var(--white);
+body {
+  padding: 0 7rem;
+}
+.projects_nav {
+  background-color: var(--white);
 }
 header {
-  padding: 1.3rem 7rem;
+  padding: 1.3rem 0;
   position: relative;
   z-index: 50;
 }
@@ -70,157 +73,126 @@ nav {
   color: var(--black);
 }
 
-/* About_Hero Section */
+/* --------------------- */
 
-#about_hero {
-  padding-bottom: 3rem;
-}
-.section__padding {
-  padding-top: 1em;
-  padding-left: 7em;
-  padding-right: 7em;
-
-  width: 100%;
-}
-
-.about_h1 {
-  color: var(--black);
-  font-family: "Quattrocento Sans";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 120px */
-  width: 80%;
-}
-.about-article {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 11.6875em;
-  margin-top: 53px;
-}
-.about-paragraph {
-  color: #000;
-  text-align: right;
-  font-family: Mulish;
-  font-size: 28px;
+.view-project_h1 {
+  color: var(--dark);
+  font-family: var(--mulish);
+  font-size: 36px;
   font-style: normal;
   font-weight: 500;
-  line-height: 141%; /* 67.68px */
-  width: 795px;
+  line-height: 146%; /* 52.56px */
+  letter-spacing: 2.34px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
-.about-paragraph span {
-  margin-bottom: 1em;
-  display: block;
+.view-project_gif {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
 }
 
-.DTA_MARCH02 {
-  margin-top: 1rem;
-  padding-right: 12rem;
-  display: flex;
-  justify-content: end;
+.work__img_lg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  position: absolute;
+  z-index: -100;
+  inset: 0;
+  opacity: 0.8;
 }
-.about_retreat {
-  margin-top: 3rem;
-  display: flex;
-  padding-left: 10rem;
+.work__overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
 }
-.about-team-div {
-  margin: 5em 0;
+
+.Play-btn {
+  cursor: pointer;
 }
-.about_team {
+.project-next-btn {
+  width: 150px;
+  cursor: pointer;
+}
+.client_brief {
+  color: var(--dark);
+  font-family: var(--mulish);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 146%; /* 52.56px */
+  letter-spacing: 2.34px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.client_speech {
   color: var(--dark);
   text-align: center;
   font-family: var(--mulish);
-  font-size: 35px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 63.45px */
-  width: 60%;
-  margin: 0 auto;
+  font-weight: 400;
+  line-height: 160%; /* 57.6px */
+  letter-spacing: 2.34px;
 }
-
-.about_vision {
-  background-color: var(--dark);
-  padding: 4rem 0 10rem 0;
-}
-.vison_h1 {
-  padding: 0 15em;
-  margin-bottom: 63px;
-}
-.vison_h1 h1 {
-  color: var(--white);
+.client_review {
+  color: var(--dark);
   font-family: var(--mulish);
-  font-size: 80px;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 500;
-  position: relative;
+  font-weight: 700;
+  line-height: 146%; /* 52.56px */
+  letter-spacing: 2.34px;
+  text-align: center;
+  margin-top: 4rem;
 }
-.vison_h1 h1::after {
-  position: absolute;
-  background: #e5e5e5;
-  width: 290px;
-  height: 5px;
-  content: "";
-  bottom: 0;
-  left: 0;
-}
-
-.about_vison-p {
-  color: #e5e5e5;
-  text-align: right;
-  font-family: Mulish;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 67.68px */
-  width: 695px;
-  margin-left: 8em;
-  flex-shrink: 0;
-}
-
-.vison_mission {
-  padding-right: 23em;
-  padding-top: 4rem;
-}
-
-.about_mission-h1 {
-  position: relative;
-  color: var(--white);
+.client-review-speech {
+  color: var(--dark);
+  text-align: center;
   font-family: var(--mulish);
-  font-size: 80px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 135.36px */
-  text-align: end;
-  margin-bottom: 53px;
+  font-weight: 400;
+  line-height: 160%; /* 57.6px */
+  letter-spacing: 2.34px;
 }
-.about_mission-h1::after {
-  position: absolute;
-  background: #e5e5e5;
-  width: 290px;
-  height: 5px;
-  content: "";
-  bottom: 0;
-  right: 0;
+.next_project {
+  color: #01000f;
+  font-family: Mulish;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 146%; /* 70.08px */
+  letter-spacing: 3.12px;
+  margin-top: 5rem;
+  text-align: center;
+}
+.Polygon {
+  margin-top: 2rem;
+  width: 80px;
+  cursor: pointer;
 }
 
-.about-mission-p {
-  color: #e5e5e5;
-  font-family: Mulish;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 67.68px */
-  width: 695px;
-  margin-left: 5em;
-  flex-shrink: 0;
-}
 /* Footer */
 footer {
-  padding: 3rem 8rem 1rem 8rem;
   width: 100%;
   flex-wrap: wrap;
+  padding-top: 8rem;
+  padding-bottom: 1rem;
 }
 .footer__container {
   display: flex;

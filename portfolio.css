@@ -1,5 +1,5 @@
-#about_main {
-  background: var(--white);
+.porfolio_nav {
+  background-color: var(--white);
 }
 header {
   padding: 1.3rem 7rem;
@@ -70,155 +70,75 @@ nav {
   color: var(--black);
 }
 
-/* About_Hero Section */
-
-#about_hero {
-  padding-bottom: 3rem;
+/* Portfolio Content Display */
+.portfolio_display {
+  padding: 4rem 7rem 0 7rem;
 }
-.section__padding {
-  padding-top: 1em;
-  padding-left: 7em;
-  padding-right: 7em;
-
-  width: 100%;
-}
-
-.about_h1 {
+.product_h1 {
   color: var(--black);
-  font-family: "Quattrocento Sans";
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 120px */
-  width: 80%;
-}
-.about-article {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 11.6875em;
-  margin-top: 53px;
-}
-.about-paragraph {
-  color: #000;
-  text-align: right;
-  font-family: Mulish;
-  font-size: 28px;
+  font-family: var(--mulish);
+  font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  line-height: 141%; /* 67.68px */
-  width: 795px;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 0.5rem;
 }
-.about-paragraph span {
-  margin-bottom: 1em;
-  display: block;
-}
-
-.DTA_MARCH02 {
-  margin-top: 1rem;
-  padding-right: 12rem;
-  display: flex;
-  justify-content: end;
-}
-.about_retreat {
+.Product_video {
   margin-top: 3rem;
+  background: #d9d9d9;
+  width: 1073px;
+  height: 608px;
+  flex-shrink: 0;
+  position: relative;
   display: flex;
-  padding-left: 10rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
-.about-team-div {
-  margin: 5em 0;
+.Product_video:hover {
+  opacity: 90%;
 }
-.about_team {
+
+.product_after {
+  position: absolute;
+  cursor: pointer;
+}
+
+.Product_video button {
+  color: #fff;
+  font-family: var(--quattrocento);
+  font-weight: 700;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: none;
+  cursor: pointer;
+  padding: 0.8rem 1.3rem;
+  font-size: 18px;
+  position: absolute;
+  bottom: 59px;
+  left: 36px;
+}
+.Product_video button:hover {
+  background: var(--orange);
   color: var(--dark);
-  text-align: center;
-  font-family: var(--mulish);
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 63.45px */
-  width: 60%;
-  margin: 0 auto;
+  outline: none;
+  border: none;
 }
 
-.about_vision {
-  background-color: var(--dark);
-  padding: 4rem 0 10rem 0;
-}
-.vison_h1 {
-  padding: 0 15em;
-  margin-bottom: 63px;
-}
-.vison_h1 h1 {
-  color: var(--white);
-  font-family: var(--mulish);
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 500;
-  position: relative;
-}
-.vison_h1 h1::after {
-  position: absolute;
-  background: #e5e5e5;
-  width: 290px;
-  height: 5px;
-  content: "";
-  bottom: 0;
-  left: 0;
-}
-
-.about_vison-p {
-  color: #e5e5e5;
-  text-align: right;
-  font-family: Mulish;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 67.68px */
-  width: 695px;
-  margin-left: 8em;
+.next-btn {
+  width: 150.654px;
+  height: 50px;
   flex-shrink: 0;
-}
-
-.vison_mission {
-  padding-right: 23em;
-  padding-top: 4rem;
-}
-
-.about_mission-h1 {
-  position: relative;
-  color: var(--white);
-  font-family: var(--mulish);
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 135.36px */
-  text-align: end;
-  margin-bottom: 53px;
-}
-.about_mission-h1::after {
+  cursor: pointer;
   position: absolute;
-  background: #e5e5e5;
-  width: 290px;
-  height: 5px;
-  content: "";
-  bottom: 0;
-  right: 0;
-}
-
-.about-mission-p {
-  color: #e5e5e5;
-  font-family: Mulish;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 141%; /* 67.68px */
-  width: 695px;
-  margin-left: 5em;
-  flex-shrink: 0;
+  bottom: 59px;
+  right: 36px;
 }
 /* Footer */
 footer {
-  padding: 3rem 8rem 1rem 8rem;
+  padding: 1rem 8rem 1rem 8rem;
   width: 100%;
   flex-wrap: wrap;
 }
